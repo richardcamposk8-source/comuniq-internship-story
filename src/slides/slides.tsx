@@ -133,7 +133,7 @@ function S3() {
         </p>
         <div className="grid grid-cols-3 gap-8">
           {items.map(([k, v], i) => (
-            <Card key={k} label={k} dark={i === 0}>
+            <Card key={k} label={k ?? ""} dark={i === 0}>
               <p className="slide-body">{v}</p>
             </Card>
           ))}

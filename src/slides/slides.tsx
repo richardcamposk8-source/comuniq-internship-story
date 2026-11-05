@@ -53,9 +53,9 @@ function S1() {
         <div className="slide-kicker text-primary">/estágio supervisionado em administração · 8º semestre</div>
         <div>
           <h1 className="slide-title-lg text-[92px]">
-            <span className="brand-slash">/</span>pesquisa de satisfação e NPS
+            <span className="brand-slash">/</span>Pesquisa de satisfação e NPS
           </h1>
-          <p className="slide-subtitle mt-8 font-normal">relato de experiência no Estúdio Comunique</p>
+          <p className="slide-subtitle mt-8 font-normal">Relato de experiência no Estúdio Comunique</p>
         </div>
         <div className="grid grid-cols-2 gap-x-12 gap-y-8">
           {[

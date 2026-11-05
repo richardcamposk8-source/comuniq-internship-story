@@ -59,12 +59,12 @@ function S1() {
         </div>
         <div className="grid grid-cols-2 gap-x-12 gap-y-8">
           {[
-            ["estagiário", "Richard de Campos Leal"],
-            ["empresa", "Estúdio Comunique LTDA"],
-            ["área", "Gestão · relacionamento com clientes"],
-            ["período", "25/08 a 20/10/2026 · 48h"],
-            ["supervisor", "Giovane"],
-            ["orientadora", "Profª Caroline Brum"],
+            ["Estagiário", "Richard de Campos Leal"],
+            ["Empresa", "Estúdio Comunique LTDA"],
+            ["Área", "Gestão · relacionamento com clientes"],
+            ["Período", "25/08 a 20/10/2026 · 48h"],
+            ["Supervisor", "Giovane Pereira"],
+            ["Orientadora", "Profª Caroline Brum"],
           ].map(([k, v]) => (
             <div key={k}>
               <div className="slide-caption text-primary font-bold">{k}</div>

@@ -81,7 +81,6 @@
   color: var(--foreground);
   font-family: var(--font-sans);
 }
-}
 .slide-title-lg { font-size: 112px; line-height: 1; font-weight: 900; letter-spacing: -0.04em; }
 .slide-title    { font-size: 76px;  line-height: 1.05; font-weight: 900; letter-spacing: -0.03em; }
 .slide-subtitle { font-size: 44px;  line-height: 1.15; font-weight: 700; }
@@ -94,6 +93,7 @@
 /* Brand graphic element: orange slash before titles */
 .brand-slash { color: var(--primary); font-weight: 900; margin-right: 0.04em; }
 .brand-dot   { color: var(--primary); font-weight: 900; }
+}
 
 @media print {
   @page { size: 1920px 1080px; margin: 0; }

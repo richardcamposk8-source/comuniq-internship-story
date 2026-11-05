@@ -159,7 +159,7 @@ function S4() {
           <div key={t} className={`flex flex-col gap-6 rounded-md p-8 ${i === 4 ? "bg-primary text-primary-foreground" : "bg-card"}`}>
             <div className={`text-[96px] font-black leading-none ${i === 4 ? "" : "text-primary"}`}>{i + 1}</div>
             <div className="slide-subtitle text-[30px] break-words">{t}</div>
-            <p className="slide-caption font-normal">{d}</p>
+            <p className="slide-body text-[28px]">{d}</p>
           </div>
         ))}
       </div>

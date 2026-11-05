@@ -61,9 +61,9 @@ function S1() {
         </div>
         <div className="grid grid-cols-2 gap-x-12 gap-y-8">
           {[
-            ["Estagiário", "Richard De Campos Leal"],
+            ["Estagiário", "Richard de Campos Leal"],
             ["Empresa", "Estúdio Comunique LTDA"],
-            ["Área", "Gestão · Relacionamento Com Clientes"],
+            ["Área", "Gestão · relacionamento com clientes"],
             ["Período", "25/08 A 20/10/2026 · 48h"],
             ["Supervisor", "Giovane Pereira"],
             ["Orientadora", "Profª Caroline Brum"],
@@ -93,7 +93,7 @@ function S1() {
 /* 2 — Conhecendo a empresa */
 function S2() {
   return (
-    <SlideLayout n={2} title="Conhecendo A Empresa">
+    <SlideLayout n={2} title="Conhecendo a empresa">
       <div className="grid h-full grid-cols-[1.25fr_1fr] gap-16">
         <div className="flex flex-col justify-center gap-10">
           <p className="slide-body-lg">
@@ -123,12 +123,12 @@ function S2() {
 /* 3 — Área de atuação */
 function S3() {
   const items = [
-    ["Papel", "Conduzir O Projeto De Pesquisa De Satisfação Com Os Clientes Do Estúdio."],
-    ["Responsabilidades", "Ouvir A Equipe, Estruturar O Questionário, Aplicar, Acompanhar E Analisar As Respostas."],
-    ["Participação", "Do Alinhamento Inicial Ao Plano De Ação, Com Autonomia E Validações Pontuais Com O Supervisor."],
+    ["Papel", "Conduzir o projeto de pesquisa de satisfação com os clientes do Estúdio."],
+    ["Responsabilidades", "Ouvir a equipe, estruturar o questionário, aplicar, acompanhar e analisar as respostas."],
+    ["Participação", "Do alinhamento inicial ao plano de ação, com autonomia e validações pontuais com o supervisor."],
   ];
   return (
-    <SlideLayout n={3} title="Área De Atuação No Estágio">
+    <SlideLayout n={3} title="Área de atuação no estágio">
       <div className="flex h-full flex-col justify-center gap-12">
         <p className="slide-subtitle">
           Gestão Do Relacionamento Com Clientes<span className="brand-dot">.</span>
@@ -148,14 +148,14 @@ function S3() {
 /* 4 — Principais atividades */
 function S4() {
   const steps = [
-    ["Alinhamento", "Reuniões Para Entender A Empresa E Definir Os Objetivos Da Pesquisa."],
-    ["Entrevistas Internas", "Escuta Da Equipe Sobre Clientes, Entregas E Relacionamento."],
-    ["Questionário E Indicador", "Perguntas Claras E Neutras, Escala De 1 A 4 E Convite Aos Clientes."],
-    ["Coleta E Follow-Up", "Acompanhamento Das Respostas E Contato Com Quem Não Respondeu."],
-    ["Análise E Insights", "Cálculo Do Índice De Satisfação De 1 A 4, Leitura Qualitativa E Apresentação À Equipe."],
+    ["Alinhamento", "Reuniões para entender a empresa e definir os objetivos da pesquisa."],
+    ["Entrevistas internas", "Escuta da equipe sobre clientes, entregas e relacionamento."],
+    ["Questionário e indicador", "Perguntas claras e neutras, escala de 1 a 4 e convite aos clientes."],
+    ["Coleta e follow-up", "Acompanhamento das respostas e contato com quem não respondeu."],
+    ["Análise e insights", "Cálculo do índice de satisfação de 1 a 4, leitura qualitativa e apresentação à equipe."],
   ];
   return (
-    <SlideLayout n={4} title="Principais Atividades">
+    <SlideLayout n={4} title="Principais atividades">
       <div className="grid h-full grid-cols-5 gap-6">
         {steps.map(([t, d], i) => (
           <div key={t} className={`flex flex-col gap-6 rounded-md p-8 ${i === 4 ? "bg-primary text-primary-foreground" : "bg-card"}`}>
@@ -172,7 +172,7 @@ function S4() {
 /* 5 — O questionário */
 function S5() {
   return (
-    <SlideLayout n={5} title="O Questionário">
+    <SlideLayout n={5} title="O questionário">
       <div className="grid h-full grid-cols-[0.9fr_1.4fr] gap-16">
         <div className="flex flex-col justify-center gap-10">
           <p className="slide-subtitle text-[40px]">
@@ -183,9 +183,9 @@ function S5() {
           </p>
           <div className="flex flex-col gap-5">
             {[
-              "11 Perguntas · Objetivas E Abertas",
-              "Escala De Satisfação De 1 A 4",
-              "Sem Identificação · Respostas Sinceras",
+              "11 Perguntas · objetivas e abertas",
+              "Escala de satisfação de 1 a 4",
+              "Sem identificação · respostas sinceras",
             ].map((t) => (
               <div key={t} className="slide-body flex items-center gap-4 rounded-md bg-card px-8 py-5 font-bold">
                 <span className="brand-dot">/</span>
@@ -196,10 +196,10 @@ function S5() {
         </div>
         <div className="grid grid-rows-2 gap-6 min-h-0">
           <div className="overflow-hidden rounded-md border">
-            <img src={questionarioTopo.url} alt="Questionário — Diagnóstico De Experiência Do Cliente" className="h-full w-full object-cover object-top" />
+            <img src={questionarioTopo.url} alt="Questionário — diagnóstico de experiência do cliente" className="h-full w-full object-cover object-top" />
           </div>
           <div className="overflow-hidden rounded-md border">
-            <img src={questionarioPontos.url} alt="Pergunta Sobre Pontos Fortes Da Comunique" className="h-full w-full object-cover object-top" />
+            <img src={questionarioPontos.url} alt="Pergunta sobre pontos fortes da Comunique" className="h-full w-full object-cover object-top" />
           </div>
         </div>
       </div>
@@ -210,12 +210,12 @@ function S5() {
 /* 6 — Entregas e contribuições */
 function S6() {
   const c = [
-    ["Mapa Interno Da Equipe", "Entrevistas Consolidadas Por Temas Recorrentes.", "Base Para As Hipóteses A Validar Com Os Clientes."],
-    ["Pesquisa De Satisfação", "Questionário Com Escala De 1 A 4 E Mensagem Introdutória.", "Média De 3,73 Na Escala De 1 A 4, Com 20 Clientes."],
-    ["Insights E Plano De Ação", "Resultados E Comentários Apresentados À Equipe.", "Ações De Melhoria Definidas E Priorizadas."],
+    ["Mapa interno da equipe", "Entrevistas consolidadas por temas recorrentes.", "Base para as hipóteses a validar com os clientes."],
+    ["Pesquisa de satisfação", "Questionário com escala de 1 a 4 e mensagem introdutória.", "Média de 3,73 na escala de 1 a 4, com 20 clientes."],
+    ["Insights e plano de ação", "Resultados e comentários apresentados à equipe.", "Ações de melhoria definidas e priorizadas."],
   ];
   return (
-    <SlideLayout n={6} title="Entregas E Contribuições">
+    <SlideLayout n={6} title="Entregas e contribuições">
       <div className="grid h-full grid-cols-3 gap-8">
         {c.map(([t, o, r], i) => (
           <div key={t} className="flex flex-col overflow-hidden rounded-md bg-card">
@@ -243,31 +243,31 @@ function S6() {
 /* 7 — Resultados da pesquisa */
 function S7() {
   const stats = [
-    ["3,73", "Média Geral Na Escala De 1 A 4"],
-    ["20", "Clientes Responderam À Pesquisa"],
-    ["76%", "Das Avaliações Com Nota Máxima (4)"],
+    ["3,73", "Média geral na escala de 1 a 4"],
+    ["20", "Clientes responderam à pesquisa"],
+    ["76%", "Das avaliações com nota máxima (4)"],
   ];
   const dims = [
-    ["Confiança Na Equipe", 3.85],
+    ["Confiança na equipe", 3.85],
     ["Atendimento", 3.85],
-    ["Parceria Estratégica", 3.8],
-    ["Qualidade Visual", 3.8],
-    ["Qualidade Dos Textos", 3.8],
-    ["Essência Da Marca", 3.75],
+    ["Parceria estratégica", 3.8],
+    ["Qualidade visual", 3.8],
+    ["Qualidade dos textos", 3.8],
+    ["Essência da marca", 3.75],
     ["Processos", 3.6],
-    ["Contribuição Aos Objetivos", 3.6],
+    ["Contribuição aos objetivos", 3.6],
     ["Estratégias", 3.55],
   ];
   const fortes = [
-    ["Atenta Ao Cliente", 14],
+    ["Atenta ao cliente", 14],
     ["Confiável", 14],
     ["Organizada", 14],
     ["Parceira", 13],
-    ["Atualizada Nas Tendências", 12],
+    ["Atualizada nas tendências", 12],
     ["Autêntica", 11],
   ];
   return (
-    <SlideLayout n={7} title="Resultados Da Pesquisa">
+    <SlideLayout n={7} title="Resultados da pesquisa">
       <div className="flex h-full flex-col gap-8">
         <div className="grid grid-cols-3 gap-8">
           {stats.map(([v, l], i) => (
@@ -308,12 +308,12 @@ function S7() {
 /* 8 — Conexões curso × estágio */
 function S8() {
   const c = [
-    ["Marketing", "Pesquisa De Satisfação Para Entender A Percepção Dos Clientes E Fortalecer O Relacionamento."],
-    ["Estatística E Métodos Quantitativos", "Indicador Próprio Em Escala De 1 A 4: Tabulação, Média E Distribuição Das Respostas."],
-    ["Gestão De Projetos", "Cronograma De 48h, Etapas, Prazos E Plano De Ação Com Responsáveis E Indicadores."],
+    ["Marketing", "Pesquisa de satisfação para entender a percepção dos clientes e fortalecer o relacionamento."],
+    ["Estatística e Métodos Quantitativos", "Indicador próprio em escala de 1 a 4: tabulação, média e distribuição das respostas."],
+    ["Gestão de Projetos", "Cronograma de 48h, etapas, prazos e plano de ação com responsáveis e indicadores."],
   ];
   return (
-    <SlideLayout n={8} title="O Curso Na Prática">
+    <SlideLayout n={8} title="O curso na prática">
       <div className="flex h-full flex-col gap-6">
         {c.map(([d, a], i) => (
           <div key={d} className="flex flex-1 items-center gap-12 rounded-md bg-card px-12">
@@ -356,7 +356,7 @@ function S9() {
 /* 10 — Reflexão final */
 function S10() {
   return (
-    <SlideLayout n={10} title="Reflexão Final">
+    <SlideLayout n={10} title="Reflexão final">
       <div className="grid h-full grid-cols-[1.3fr_1fr] gap-16">
         <div className="flex flex-col justify-center gap-10">
           <p className="slide-body-lg">
@@ -403,14 +403,14 @@ function S11() {
 
 export const slides = [
   { title: "Identificação", C: S1 },
-  { title: "Conhecendo A Empresa", C: S2 },
-  { title: "Área De Atuação", C: S3 },
-  { title: "Principais Atividades", C: S4 },
-  { title: "O Questionário", C: S5 },
-  { title: "Entregas E Contribuições", C: S6 },
-  { title: "Resultados Da Pesquisa", C: S7 },
-  { title: "O Curso Na Prática", C: S8 },
+  { title: "Conhecendo a empresa", C: S2 },
+  { title: "Área de atuação", C: S3 },
+  { title: "Principais atividades", C: S4 },
+  { title: "O questionário", C: S5 },
+  { title: "Entregas e contribuições", C: S6 },
+  { title: "Resultados da pesquisa", C: S7 },
+  { title: "O curso na prática", C: S8 },
   { title: "Aprendizados", C: S9 },
-  { title: "Reflexão Final", C: S10 },
+  { title: "Reflexão final", C: S10 },
   { title: "Encerramento", C: S11 },
 ];

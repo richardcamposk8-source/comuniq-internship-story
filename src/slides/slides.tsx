@@ -268,32 +268,32 @@ function S7() {
   ];
   return (
     <SlideLayout n={7} title="Resultados Da Pesquisa">
-      <div className="flex h-full flex-col gap-10">
+      <div className="flex h-full flex-col gap-8">
         <div className="grid grid-cols-3 gap-8">
           {stats.map(([v, l], i) => (
-            <div key={l} className={`rounded-md p-8 ${i === 0 ? "bg-primary text-primary-foreground" : "bg-ink text-ink-foreground"}`}>
-              <div className="text-[88px] font-black leading-none">{v}</div>
-              <div className="slide-caption mt-3">{l}</div>
+            <div key={l} className={`flex items-center gap-6 rounded-md px-8 py-5 ${i === 0 ? "bg-primary text-primary-foreground" : "bg-ink text-ink-foreground"}`}>
+              <div className="text-[64px] font-black leading-none">{v}</div>
+              <div className="slide-caption">{l}</div>
             </div>
           ))}
         </div>
         <div className="grid flex-1 min-h-0 grid-cols-[1.35fr_1fr] gap-12">
-          <div className="flex flex-col justify-center gap-[14px] rounded-md bg-card p-8">
+          <div className="flex flex-col justify-center gap-[12px] rounded-md bg-card p-8">
             <div className="slide-kicker text-primary">Média Por Dimensão · Escala De 1 A 4</div>
             {dims.map(([label, v]) => (
               <div key={label as string} className="flex items-center gap-6">
                 <div className="slide-caption w-[330px] shrink-0 font-normal">{label}</div>
-                <div className="h-[22px] flex-1 rounded-sm bg-muted">
+                <div className="h-[18px] flex-1 rounded-sm bg-muted">
                   <div className="h-full rounded-sm bg-primary" style={{ width: `${((v as number) / 4) * 100}%` }} />
                 </div>
                 <div className="slide-caption w-[90px] text-right font-bold">{String((v as number).toFixed(2)).replace(".", ",")}</div>
               </div>
             ))}
           </div>
-          <div className="flex flex-col justify-center gap-5 rounded-md bg-card p-8">
+          <div className="flex flex-col justify-center gap-4 rounded-md bg-card p-8">
             <div className="slide-kicker text-primary">Pontos Fortes Mais Citados</div>
             {fortes.map(([label, v]) => (
-              <div key={label as string} className="flex items-center justify-between border-b pb-4 last:border-0">
+              <div key={label as string} className="flex items-center justify-between border-b pb-3 last:border-0">
                 <span className="slide-body">{label}</span>
                 <span className="slide-body font-bold text-primary">{v}</span>
               </div>

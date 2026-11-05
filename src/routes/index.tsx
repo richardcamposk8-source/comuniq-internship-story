@@ -13,9 +13,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Defesa de Estágio — Richard Leal | Estúdio Comunique" },
-      { name: "description", content: "Apresentação do Estágio Supervisionado em Administração no Estúdio Comunique: pesquisa de satisfação e NPS." },
+      { name: "description", content: "Apresentação do Estágio Supervisionado em Administração no Estúdio Comunique: pesquisa de satisfação com indicador de 1 a 4." },
       { property: "og:title", content: "Defesa de Estágio — Richard Leal" },
-      { property: "og:description", content: "Pesquisa de satisfação e NPS no Estúdio Comunique — Estágio Supervisionado em Administração, AMF." },
+      { property: "og:description", content: "Pesquisa de satisfação com indicador de 1 a 4 no Estúdio Comunique — Estágio Supervisionado em Administração, AMF." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

@@ -53,7 +53,7 @@ function S1() {
         <div className="slide-kicker text-primary">/estágio supervisionado em administração · 8º semestre</div>
         <div>
           <h1 className="slide-title-lg text-[92px]">
-            <span className="brand-slash">/</span>Pesquisa de satisfação e NPS
+            <span className="brand-slash">/</span>Pesquisa de satisfação
           </h1>
           <p className="slide-subtitle mt-8 font-normal">Relato de experiência no Estúdio Comunique</p>
         </div>
@@ -121,7 +121,7 @@ function S2() {
 /* 3 — Área de atuação */
 function S3() {
   const items = [
-    ["papel", "Conduzir o projeto de pesquisa de satisfação e NPS com os clientes do estúdio."],
+    ["papel", "Conduzir o projeto de pesquisa de satisfação com os clientes do estúdio."],
     ["responsabilidades", "Ouvir a equipe, estruturar o questionário, aplicar, acompanhar e analisar as respostas."],
     ["participação", "Do alinhamento inicial ao plano de ação, com autonomia e validações pontuais com o supervisor."],
   ];
@@ -148,9 +148,9 @@ function S4() {
   const steps = [
     ["alinhamento", "Reuniões para entender a empresa e definir os objetivos da pesquisa."],
     ["entrevistas internas", "Escuta da equipe sobre clientes, entregas e relacionamento."],
-    ["questionário + NPS", "Perguntas claras e neutras, escala de 1 a 4 e convite aos clientes."],
+    ["questionário e indicador", "Perguntas claras e neutras, escala de 1 a 4 e convite aos clientes."],
     ["coleta e follow-up", "Acompanhamento das respostas e contato com quem não respondeu."],
-    ["análise e insights", "Cálculo do NPS, leitura qualitativa e apresentação à equipe."],
+    ["análise e insights", "Cálculo do índice de satisfação de 1 a 4, leitura qualitativa e apresentação à equipe."],
   ];
   return (
     <SlideLayout n={4} title="principais atividades">
@@ -171,7 +171,7 @@ function S4() {
 function S5() {
   const c = [
     ["mapa interno da equipe", "Entrevistas consolidadas por temas recorrentes.", "Base para as hipóteses a validar com os clientes."],
-    ["pesquisa de satisfação e NPS", "Duas versões do questionário, escala e mensagem introdutória.", "Instrumento aplicado aos clientes do estúdio."],
+    ["pesquisa de satisfação", "Duas versões do questionário, escala de 1 a 4 e mensagem introdutória.", "Instrumento aplicado aos clientes do estúdio."],
     ["insights e plano de ação", "Resultados e comentários apresentados à equipe.", "Ações de melhoria definidas e priorizadas."],
   ];
   return (
@@ -203,8 +203,8 @@ function S5() {
 /* 6 — Conexões curso × estágio */
 function S6() {
   const c = [
-    ["Marketing", "Pesquisa de satisfação e NPS para entender a percepção dos clientes e fortalecer o relacionamento."],
-    ["Estatística e Métodos Quantitativos", "Classificação em promotores, neutros e detratores e cálculo do NPS."],
+    ["Marketing", "Pesquisa de satisfação para entender a percepção dos clientes e fortalecer o relacionamento."],
+    ["Estatística e Métodos Quantitativos", "Indicador próprio em escala de 1 a 4: tabulação, média e distribuição das respostas."],
     ["Gestão de Projetos", "Cronograma de 48h, etapas, prazos e plano de ação com responsáveis e indicadores."],
   ];
   return (
@@ -229,7 +229,7 @@ function S7() {
       <div className="grid h-full grid-cols-2 gap-10">
         <Card label="técnicos">
           <ul className="slide-body-lg flex flex-col gap-5">
-            <li><span className="brand-dot">· </span>metodologia NPS</li>
+            <li><span className="brand-dot">· </span>indicador de satisfação de 1 a 4</li>
             <li><span className="brand-dot">· </span>elaboração de questionários e escalas</li>
             <li><span className="brand-dot">· </span>análise qualitativa de dados</li>
             <li><span className="brand-dot">· </span>planos de ação e indicadores</li>

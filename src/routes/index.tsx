@@ -3,12 +3,12 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { ChevronLeft, ChevronRight, Maximize, Printer } from "lucide-react";
 import { slides } from "@/slides/slides";
 
-type Search = { slide?: number; print?: boolean };
+type Search = { slide?: number | undefined; print?: boolean | undefined };
 
 export const Route = createFileRoute("/")({
   validateSearch: (s: Record<string, unknown>): Search => ({
-    slide: s.slide ? Math.max(1, Math.min(slides.length, Number(s.slide) || 1)) : undefined,
-    print: s.print === true || s.print === "1" || s.print === "true" ? true : undefined,
+    slide: s["slide"] ? Math.max(1, Math.min(slides.length, Number(s["slide"]) || 1)) : undefined,
+    print: s["print"] === true || s["print"] === "1" || s["print"] === "true" ? true : undefined,
   }),
   head: () => ({
     meta: [
@@ -59,10 +59,11 @@ function Deck() {
       const t = setTimeout(() => window.print(), 800);
       return () => clearTimeout(t);
     }
+    return undefined;
   }, [print]);
 
   useEffect(() => {
-    document.title = `${slide}/${slides.length} — ${slides[i].title}`;
+    document.title = `${slide}/${slides.length} — ${slides[i]!.title}`;
     const onKey = (e: KeyboardEvent) => {
       if (["ArrowRight", " ", "PageDown"].includes(e.key)) { e.preventDefault(); go(slide + 1); }
       if (["ArrowLeft", "PageUp"].includes(e.key)) { e.preventDefault(); go(slide - 1); }
@@ -84,14 +85,14 @@ function Deck() {
     );
   }
 
-  const Current = slides[i].C;
+  const Current = slides[i]!.C;
   return (
     <div
       className="flex h-screen flex-col bg-stage"
-      onTouchStart={(e) => (touchX.current = e.touches[0].clientX)}
+      onTouchStart={(e) => (touchX.current = e.touches[0]!.clientX)}
       onTouchEnd={(e) => {
         if (touchX.current === null) return;
-        const dx = e.changedTouches[0].clientX - touchX.current;
+        const dx = e.changedTouches[0]!.clientX - touchX.current;
         if (Math.abs(dx) > 50) go(dx < 0 ? slide + 1 : slide - 1);
         touchX.current = null;
       }}

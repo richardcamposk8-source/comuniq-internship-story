@@ -52,7 +52,7 @@ function S1() {
       <div className="flex w-[1100px] flex-col justify-between bg-ink p-[120px] text-ink-foreground">
         <div className="slide-kicker text-primary">/estágio supervisionado em administração · 8º semestre</div>
         <div>
-          <h1 className="slide-title-lg">
+          <h1 className="slide-title-lg text-[92px]">
             <span className="brand-slash">/</span>pesquisa de satisfação e NPS
           </h1>
           <p className="slide-subtitle mt-8 font-normal">relato de experiência no Estúdio Comunique</p>
@@ -158,7 +158,7 @@ function S4() {
         {steps.map(([t, d], i) => (
           <div key={t} className={`flex flex-col gap-6 rounded-md p-8 ${i === 4 ? "bg-primary text-primary-foreground" : "bg-card"}`}>
             <div className={`text-[96px] font-black leading-none ${i === 4 ? "" : "text-primary"}`}>{i + 1}</div>
-            <div className="slide-subtitle text-[34px]">{t}</div>
+            <div className="slide-subtitle text-[30px] break-words">{t}</div>
             <p className="slide-caption font-normal">{d}</p>
           </div>
         ))}

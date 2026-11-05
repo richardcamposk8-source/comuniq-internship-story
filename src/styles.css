@@ -71,6 +71,7 @@
 }
 
 /* Slide canvas */
+@layer components {
 .slide-content {
   width: 1920px;
   height: 1080px;
@@ -79,6 +80,7 @@
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+}
 }
 .slide-title-lg { font-size: 112px; line-height: 1; font-weight: 900; letter-spacing: -0.04em; }
 .slide-title    { font-size: 76px;  line-height: 1.05; font-weight: 900; letter-spacing: -0.03em; }

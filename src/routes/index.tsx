@@ -8,7 +8,7 @@ type Search = { slide?: number | undefined; print?: boolean | undefined };
 export const Route = createFileRoute("/")({
   validateSearch: (s: Record<string, unknown>): Search => ({
     slide: s["slide"] ? Math.max(1, Math.min(slides.length, Number(s["slide"]) || 1)) : undefined,
-    print: s["print"] === true || s["print"] === "1" || s["print"] === "true" ? true : undefined,
+    print: s["print"] === true || s["print"] === 1 || s["print"] === "1" || s["print"] === "true" ? true : undefined,
   }),
   head: () => ({
     meta: [

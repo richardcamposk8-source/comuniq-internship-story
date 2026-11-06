@@ -27,7 +27,7 @@ function SlideLayout({ n, title, children }: { n: number; title: string; childre
       <div className="mt-6 flex items-center justify-between border-t pt-6">
         <img src={logoHorizontal.url} alt="estudio.comunique" className="h-[34px]" />
         <span className="slide-chrome text-muted-foreground">
-          Richard De Campos Leal <span className="brand-dot">·</span> Estágio Supervisionado Em Administração
+          Richard de Campos Leal <span className="brand-dot">·</span> Estágio Supervisionado em Administração
         </span>
         <span className="slide-chrome font-bold">
           <span className="text-primary">{String(n).padStart(2, "0")}</span>
@@ -52,19 +52,19 @@ function S1() {
   return (
     <div className="slide-content flex">
       <div className="flex w-[1100px] flex-col justify-between bg-ink p-[120px] text-ink-foreground">
-        <div className="slide-kicker text-primary">/Estágio Supervisionado Em Administração · 8º Semestre</div>
+        <div className="slide-kicker text-primary">/Estágio Supervisionado em Administração · 8º semestre</div>
         <div>
           <h1 className="slide-title-lg text-[92px]">
-            <span className="brand-slash">/</span>Pesquisa De Satisfação
+            <span className="brand-slash">/</span>Pesquisa de satisfação
           </h1>
-          <p className="slide-subtitle mt-8 font-normal">Relato De Experiência No Estúdio Comunique</p>
+          <p className="slide-subtitle mt-8 font-normal">Relato de experiência no Estúdio Comunique</p>
         </div>
         <div className="grid grid-cols-2 gap-x-12 gap-y-8">
           {[
             ["Estagiário", "Richard de Campos Leal"],
             ["Empresa", "Estúdio Comunique LTDA"],
             ["Área", "Gestão · relacionamento com clientes"],
-            ["Período", "25/08 A 20/10/2026 · 48h"],
+            ["Período", "25/08 a 20/10/2026 · 48h"],
             ["Supervisor", "Giovane Pereira"],
             ["Orientadora", "Profª Caroline Brum"],
           ].map(([k, v]) => (
@@ -80,7 +80,7 @@ function S1() {
         <div className="flex items-center gap-8">
           <img src={seloAmf.url} alt="Administração — Antonio Meneghetti Faculdade" className="h-[200px] w-[200px] rounded-full" />
           <div className="slide-caption text-muted-foreground">
-            Bacharelado Em Administração
+            Bacharelado em Administração
             <br />
             <b className="font-bold text-foreground">Antonio Meneghetti Faculdade</b>
           </div>
@@ -97,22 +97,22 @@ function S2() {
       <div className="grid h-full grid-cols-[1.25fr_1fr] gap-16">
         <div className="flex flex-col justify-center gap-10">
           <p className="slide-body-lg">
-            Estúdio De <b className="font-bold">Branding E Posicionamento Estratégico</b> Que Atua Como Consultoria,
-            Ajudando Negócios A Descobrirem Sua Essência E Se Comunicarem De Forma Autêntica.
+            Estúdio de <b className="font-bold">branding e posicionamento estratégico</b> que atua como consultoria,
+            ajudando negócios a descobrirem sua essência e se comunicarem de forma autêntica.
           </p>
           <p className="slide-body text-muted-foreground">
-            Afasta-Se Do Modelo De Agência Tradicional: O Foco É Construir, Diferenciar E Valorizar Marcas Reais.
+            Afasta-se do modelo de agência tradicional: o foco é construir, diferenciar e valorizar marcas reais.
           </p>
         </div>
         <div className="grid grid-rows-3 gap-6">
           <Card label="Segmento">
-            <div className="slide-body font-bold">Publicidade · Consultoria Em Comunicação E Branding</div>
+            <div className="slide-body font-bold">Publicidade · Consultoria em comunicação e branding</div>
           </Card>
           <Card label="Trajetória">
-            <div className="slide-body font-bold">6 Anos · Santa Maria, RS</div>
+            <div className="slide-body font-bold">6 anos · Santa Maria, RS</div>
           </Card>
           <Card label="Serviços" dark>
-            <div className="slide-body font-bold">Branding · Posicionamento · Comunicação De Marca</div>
+            <div className="slide-body font-bold">Branding · Posicionamento · Comunicação de marca</div>
           </Card>
         </div>
       </div>
@@ -131,7 +131,7 @@ function S3() {
     <SlideLayout n={3} title="Área de atuação no estágio">
       <div className="flex h-full flex-col justify-center gap-12">
         <p className="slide-subtitle">
-          Gestão Do Relacionamento Com Clientes<span className="brand-dot">.</span>
+          Gestão do relacionamento com clientes<span className="brand-dot">.</span>
         </p>
         <div className="grid grid-cols-3 gap-8">
           {items.map(([k, v], i) => (
@@ -176,14 +176,14 @@ function S5() {
       <div className="grid h-full grid-cols-[0.9fr_1.4fr] gap-16">
         <div className="flex flex-col justify-center gap-10">
           <p className="slide-subtitle text-[40px]">
-            /Diagnóstico De Experiência Do Cliente<span className="brand-dot">.</span>
+            /Diagnóstico de experiência do cliente<span className="brand-dot">.</span>
           </p>
           <p className="slide-body text-muted-foreground">
-            Formulário Online Com Identidade Visual Do Estúdio, Aplicado Aos Clientes Pela Base De Relacionamento.
+            Formulário online com a identidade visual do Estúdio, aplicado aos clientes pela base de relacionamento.
           </p>
           <div className="flex flex-col gap-5">
             {[
-              "11 Perguntas · objetivas e abertas",
+              "11 perguntas · objetivas e abertas",
               "Escala de satisfação de 1 a 4",
               "Sem identificação · respostas sinceras",
             ].map((t) => (
@@ -225,7 +225,7 @@ function S6() {
             </div>
             <div className="flex flex-1 flex-col justify-between gap-6 p-10">
               <div>
-                <div className="slide-caption font-bold text-primary">O Que Foi Feito</div>
+                <div className="slide-caption font-bold text-primary">O que foi feito</div>
                 <p className="slide-body mt-2">{o}</p>
               </div>
               <div>
@@ -279,7 +279,7 @@ function S7() {
         </div>
         <div className="grid flex-1 min-h-0 grid-cols-[1.35fr_1fr] gap-12">
           <div className="flex flex-col justify-center gap-[12px] rounded-md bg-card p-8">
-            <div className="slide-kicker text-primary">Média Por Dimensão · Escala De 1 A 4</div>
+            <div className="slide-kicker text-primary">Média por dimensão · Escala de 1 a 4</div>
             {dims.map(([label, v]) => (
               <div key={label as string} className="flex items-center gap-6">
                 <div className="slide-caption w-[330px] shrink-0 font-normal">{label}</div>
@@ -291,7 +291,7 @@ function S7() {
             ))}
           </div>
           <div className="flex flex-col justify-center gap-4 rounded-md bg-card p-8">
-            <div className="slide-kicker text-primary">Pontos Fortes Mais Citados</div>
+            <div className="slide-kicker text-primary">Pontos fortes mais citados</div>
             {fortes.map(([label, v]) => (
               <div key={label as string} className="flex items-center justify-between border-b pb-3 last:border-0">
                 <span className="slide-body">{label}</span>
@@ -334,18 +334,18 @@ function S9() {
       <div className="grid h-full grid-cols-2 gap-10">
         <Card label="Técnicos">
           <ul className="slide-body-lg flex flex-col gap-5">
-            <li><span className="brand-dot">· </span>Indicador De Satisfação De 1 A 4</li>
-            <li><span className="brand-dot">· </span>Elaboração De Questionários E Escalas</li>
-            <li><span className="brand-dot">· </span>Análise Qualitativa De Dados</li>
-            <li><span className="brand-dot">· </span>Planos De Ação E Indicadores</li>
+            <li><span className="brand-dot">· </span>Indicador de satisfação de 1 a 4</li>
+            <li><span className="brand-dot">· </span>Elaboração de questionários e escalas</li>
+            <li><span className="brand-dot">· </span>Análise qualitativa de dados</li>
+            <li><span className="brand-dot">· </span>Planos de ação e indicadores</li>
           </ul>
         </Card>
         <Card label="Comportamentais" dark>
           <ul className="slide-body-lg flex flex-col gap-5">
-            <li><span className="brand-dot">· </span>Escuta Ativa E Imparcialidade</li>
-            <li><span className="brand-dot">· </span>Comunicação Com Clientes E Equipe</li>
-            <li><span className="brand-dot">· </span>Organização E Gestão De Prazos</li>
-            <li><span className="brand-dot">· </span>Autonomia Na Tomada De Decisão</li>
+            <li><span className="brand-dot">· </span>Escuta ativa e imparcialidade</li>
+            <li><span className="brand-dot">· </span>Comunicação com clientes e equipe</li>
+            <li><span className="brand-dot">· </span>Organização e gestão de prazos</li>
+            <li><span className="brand-dot">· </span>Autonomia na tomada de decisão</li>
           </ul>
         </Card>
       </div>
@@ -360,18 +360,18 @@ function S10() {
       <div className="grid h-full grid-cols-[1.3fr_1fr] gap-16">
         <div className="flex flex-col justify-center gap-10">
           <p className="slide-body-lg">
-            A Pesquisa Não Termina Na Coleta: O Valor Está Em <b className="font-bold">Transformar Percepções Dos Clientes Em Decisões Práticas</b>.
+            A pesquisa não termina na coleta: o valor está em <b className="font-bold">transformar percepções dos clientes em decisões práticas</b>.
           </p>
           <p className="slide-body text-muted-foreground">
-            A Experiência Reforçou Planejamento, Organização E Análise Crítica Como Competências Centrais Do Administrador.
+            A experiência reforçou planejamento, organização e análise crítica como competências centrais do administrador.
           </p>
         </div>
         <div className="flex flex-col justify-center rounded-md bg-ink p-12 text-ink-foreground">
-          <div className="slide-kicker text-primary">Avaliação Do Supervisor</div>
+          <div className="slide-kicker text-primary">Avaliação do supervisor</div>
           <p className="slide-subtitle mt-6 text-[40px]">
-            “Supera As Exigências Do Mercado De Trabalho”
+            “Supera as exigências do mercado de trabalho”
           </p>
-          <p className="slide-caption mt-6">Ótimo Em 8 De 10 Itens Avaliados.</p>
+          <p className="slide-caption mt-6">Ótimo em 8 de 10 itens avaliados.</p>
         </div>
       </div>
     </SlideLayout>
@@ -382,15 +382,15 @@ function S10() {
 function S11() {
   return (
     <div className="slide-content flex flex-col justify-between bg-ink p-[120px] text-ink-foreground">
-      <div className="slide-kicker text-primary">/Como Esta Experiência Contribuiu Para Minha Formação?</div>
+      <div className="slide-kicker text-primary">/Como esta experiência contribuiu para minha formação?</div>
       <p className="slide-title max-w-[1500px] text-[72px]">
-        <span className="brand-slash">/</span>O Estágio Transformou Conhecimentos Acadêmicos Em Experiências Concretas
+        <span className="brand-slash">/</span>O estágio transformou conhecimentos acadêmicos em experiências concretas
         <span className="brand-dot">.</span>
       </p>
       <div className="flex items-end justify-between">
         <div>
           <div className="slide-title-lg">Obrigado<span className="brand-dot">.</span></div>
-          <div className="slide-body mt-4">Richard De Campos Leal</div>
+          <div className="slide-body mt-4">Richard de Campos Leal</div>
         </div>
         <div className="flex items-center gap-8 rounded-md bg-background p-6">
           <img src={logoHorizontal.url} alt="estudio.comunique" className="h-[48px]" />
